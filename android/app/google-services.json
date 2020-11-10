@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "905333281211",
+    "firebase_url": "https://pluto-7036c.firebaseio.com",
+    "project_id": "pluto-7036c",
+    "storage_bucket": "pluto-7036c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905333281211:android:9e1b361da73c03cfc2b49e",
+        "android_client_info": {
+          "package_name": "com.example.pluto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905333281211-r53srl24j9v3l67gbrclqo6bl59p7j54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pluto",
+            "certificate_hash": "d9edd0d316873d2d24992fa8d49d3b5add596abd"
+          }
+        },
+        {
+          "client_id": "905333281211-d1hl59kc1q7csqgs7p29d3v6vepvofq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpSBCyUoFzqju8VVD8WnL0bsPYFT_ul4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905333281211-d1hl59kc1q7csqgs7p29d3v6vepvofq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
