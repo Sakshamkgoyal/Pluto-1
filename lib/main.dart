@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pluto/screens/homepage.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:pluto/intro/intro.dart';
 
 
 void main() {
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'em'),
       initialRoute: "home",
       routes: {
-        "home" : (context)  => HomePage(),
+        "home" : (context)  => intro(),
     },
   debugShowCheckedModeBanner: false,
     );
