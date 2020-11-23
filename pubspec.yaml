@@ -31,6 +31,9 @@ dependencies:
   google_fonts: ^1.1.1
   lottie: ^0.7.0+1
   flare_flutter: ^2.0.6
+  firebase_core: ^0.5.2
+  firebase_auth: ^0.18.3
+  provider: ^4.3.2+2
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +54,8 @@ flutter:
   assets:
     - assets/lottie/
     - assets/lottie/people-work.json
+    - assets/lottie/play.json
+    - assets/lottie/yogi.json
     - assets/splash.flr
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

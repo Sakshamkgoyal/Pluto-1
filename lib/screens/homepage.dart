@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pluto/Services/authentication_service.dart';
+import 'package:pluto/main.dart';
+import 'package:provider/provider.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -38,6 +41,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Row(
                     children: [
+                      IconButton(icon: Icon(Icons.exit_to_app), onPressed: (){
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> MyApp()));
+                        context.read<AuthenticationService>().signOut();
+                      }),
                       Padding(padding: EdgeInsets.all(10)),
                       IconButton(icon: Icon(Icons.thumb_up), onPressed: (){
                         print("object");

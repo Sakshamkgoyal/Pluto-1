@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:pluto/screens/homepage.dart';
+import 'package:pluto/intro/start.dart';
 
 class intro extends StatefulWidget {
   @override
@@ -56,7 +56,7 @@ class _introState extends State<intro> {
             child: Column(crossAxisAlignment: CrossAxisAlignment.stretch,children: <Widget>[
               Container(
                 alignment: Alignment.centerRight,
-                child: FlatButton(onPressed: ()=> print('Skip'),
+                child: FlatButton(onPressed: ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> SignInPage())),
                   child: Text('Skip',style: GoogleFonts.elMessiri(
                     color: Colors.white,
                     fontSize: 20.0,
@@ -240,7 +240,7 @@ class _introState extends State<intro> {
       ),
       bottomSheet: _currentPage == _numPages -1 ? GestureDetector(
         onTap: (){
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> HomePage()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> SignInPage()));
         },
         child: Container(
           height: MediaQuery.of(context).size.height/10,
